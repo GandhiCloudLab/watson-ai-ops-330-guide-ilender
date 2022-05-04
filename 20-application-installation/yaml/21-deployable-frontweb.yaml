@@ -1,0 +1,115 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: ilender-frontweb
+  namespace: ilender-ns
+  labels:
+    app: ilender-application
+    subname: frontweb
+spec:
+  selector:
+    matchLabels:
+      app: ilender-application
+      subname: frontweb
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ilender-application
+        subname: frontweb
+    spec:
+      containers:
+        - name: ilender-frontweb
+          image: "gandigit/ilender-frontweb-demo:0.0.1"
+          imagePullPolicy: Always
+          ports:
+            - name: my-http
+              containerPort: 9070
+              protocol: TCP
+            - name: https
+              containerPort: 8082
+          # resources:
+          #   requests:
+          #     memory: "500Mi"
+          #     cpu: "250m"
+          #   limits:
+          #     memory: "1024Mi"
+          #     cpu: "500m"
+          # livenessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: my-http
+          #   initialDelaySeconds: 120
+          # failureThreshold: 6
+          # readinessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: my-http
+          #   initialDelaySeconds: 120
+          env:
+            - name: MY_NAMESPACE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: MY_CONTAINER_NAME
+              value: ilender-frontweb
+            - name: MY_CONTAINER_IMAGE
+              value: "gandigit/ilender-frontweb-demo:0.0.1"
+            - name: MY_LABELS_APP
+              # value: frontwebservice
+              value: ilender-frontweb
+            - name: MY_HOST
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+            - name: MY_POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: MY_POD_ID
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.uid
+            - name: skipExternalLog
+              value: "TRUE"
+          envFrom:
+            - configMapRef:
+                name: ilender-configmap-urls
+            - configMapRef:
+                name: ilender-configmap-common
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ilender-frontweb
+  namespace: ilender-ns
+  labels:
+    app: ilender-application
+    subname: frontweb
+spec:
+  type: NodePort
+  ports:
+    - name: my-http
+      port: 9090
+      targetPort: my-http
+      nodePort: 30600
+  selector:
+    app: ilender-application
+    subname: frontweb
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: ilender-frontweb
+  namespace: ilender-ns
+  labels:
+    app: ilender-application
+    subname: frontweb
+spec:
+  path: /
+  to:
+    kind: Service
+    name: ilender-frontweb
+    weight: 100
+  port:
+    targetPort: my-http    
