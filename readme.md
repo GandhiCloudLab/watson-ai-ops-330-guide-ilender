@@ -15,7 +15,6 @@ Here is the architecture that we are going to setup.
 
 
 ### 1. Watson AIOps 3.3 Installation
-
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -40,8 +39,7 @@ Here is the architecture that we are going to setup.
 
 </table>
 
-### 3. Setup Operational Systems
-
+### 2. Setup Tools for Integration
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -83,8 +81,7 @@ Here is the architecture that we are going to setup.
 </table>
 
 
-### 4. Setup Managed Environment
-
+### 3. Setup Managed Environment
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -103,8 +100,7 @@ Here is the architecture that we are going to setup.
 </table>
 
 
-### 5. Setup Initial Configurations
-
+### 4. Setup Data and Tool Configurations
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -147,8 +143,7 @@ Here is the architecture that we are going to setup.
     </tr>    
 </table>
 
-### 6. Application Management
-
+### 5. Application Management
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -164,8 +159,7 @@ Here is the architecture that we are going to setup.
     </tr>
 </table>
 
-### 7. AI Model Management
-
+### 6. AI Model Management
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -190,8 +184,7 @@ Here is the architecture that we are going to setup.
     </tr>    
 </table>
 
-### 8. Training
-
+### 7. Training
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -223,8 +216,7 @@ Here is the architecture that we are going to setup.
 </table>
 
 
-### 9. Inferencing
-
+### 8. Inferencing
 <table>
     <tr>
         <td width="4%">S.No</td>
