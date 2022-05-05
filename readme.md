@@ -69,10 +69,17 @@ Here is the architecture that we are going to setup.
         <td>Create ServiceNow Instance</td>
         <td></td>
         <td>ServiceNow</td>
-        <td>[Details ...](https://developer.servicenow.com/dev.do)</td>
+        <td>[Details ...](https://developer.servicenow.com/dev.do)   [Up and Running](https://pages.github.ibm.com/up-and-running/watson-aiops/3.3%20PoC%20Cookbooks/ServiceNow/)</td>
     </tr>
     <tr>
         <td>3.4 </td>
+        <td>Install SnowPlugin</td>
+        <td></td>
+        <td>ServiceNow</td>
+        <td>[Details ...](https://github.com/ibm-ecosystem-lab/watson-ai-ops-snow/tree/main/02-snow-waiops-plugin)   [Up and Running](https://pages.github.ibm.com/up-and-running/watson-aiops/3.3%20PoC%20Cookbooks/ServiceNow/)</td>
+    </tr>
+    <tr>
+        <td>3.5 </td>
         <td>Create Sample Incidents in Service now</td>
         <td></td>
         <td>ServiceNow</td>
