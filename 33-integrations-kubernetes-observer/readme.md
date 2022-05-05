@@ -3,7 +3,7 @@
 This document explains about how to setup Kubernetes Observer in Watson AIOps.
 
 As part of the kubernetes observer, it is required to communicate with the target cluster. 
-Here the target cluster is the local cluster where the AI Manager is installed.
+Here the target cluster is the local cluster where the AI Manager and iLender app are installed.
 
 Do the following.
 
@@ -30,11 +30,8 @@ Do the following.
 
 5. Enter the following
 
- - Connection Type : Load
- - IP Address : `URL` portion of the `Service Enpoint URL` retrieved in the above section
- - Port : `Port` portion of the `Service Enpoint URL` retrieved in the above section
- - Token : `Access Token` retrieved in the above section
- - Namespace : Any name where you have deployed your app to observe
+ - Connection Type : Local
+ - Namespace : ilender-ns  (where you have deployed your app to observe)
 
 <img src="images/image-00005.png">
 
@@ -47,7 +44,7 @@ Do the following.
 
 <img src="images/image-00006.png">
 
-8. Kubernetes connection is created successfully. This might have observer the resources found in the given namespace of the kubernetes cluster and create a Resource group
+8. Kubernetes connection is created successfully. This might observe the resources found in the given namespace of the kubernetes cluster and create a Resource group
 
 <img src="images/image-00007.png">
 

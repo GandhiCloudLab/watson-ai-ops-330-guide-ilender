@@ -176,7 +176,7 @@ Do the same for both the channels.
 
 5. Do the `Test Connection`
 
-6. Click on `Save` button.
+6. Click on `Done` button.
 
 <img src="images/image-aimgr-00005.png">
 <img src="images/image-aimgr-00006.png">

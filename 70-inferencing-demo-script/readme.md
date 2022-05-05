@@ -7,7 +7,7 @@ Need to update few properties in the `config.sh`.
 Update the API_URL property with application url.
 
 ```
-API_URL=http://1.1.1.1:30600
+API_URL=http://ilender-frontweb-ilender-ns.aaaaa.cloud
 ```
 
 Refer : [20-application-installation](../20-application-installation) to get application url
@@ -17,7 +17,7 @@ Refer : [20-application-installation](../20-application-installation) to get app
 Update the API_URL_CREDIT_SCORE property with creditscore service url.
 
 ```
-API_URL_CREDIT_SCORE=http://1.1.1.1:30601
+API_URL_CREDIT_SCORE=http://ilender-creditscore-ilender-ns.aaaaa.cloud/creditscore
 ```
 
 Refer : [20-application-installation](../20-application-installation) to get creditscore url

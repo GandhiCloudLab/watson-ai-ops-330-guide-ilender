@@ -37,7 +37,7 @@ The article is based on the the following
 - Start Date: Yesterday date
 - End Date: Tomorrow date
 
-(Whiel training, we will go for live logs and the date of the live logs should fall under this date range)
+(While training, the logs date should fall under this date range)
 
 5. Click on `Next` 
 
@@ -68,6 +68,3 @@ The article is based on the the following
 The Log Anomaly model training definition is displayed.
 
 <img src="images/image-00010.png">
-
-
-<img src="images/image-00011.png">

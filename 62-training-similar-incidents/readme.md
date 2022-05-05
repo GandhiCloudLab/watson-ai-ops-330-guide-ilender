@@ -5,7 +5,7 @@ This article explains about how to do Similar Incidents training in Watson AIOps
 The article is based on the the following
 
 - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.2.0
+- Watson AI-Ops 3.3.0
 
 
 ## 1. Pre Requisite
@@ -22,53 +22,62 @@ You can refer to this link to create these incidents in sevicenow. https://githu
 
 ## 2. Enable Data flow for Training
 
-1. Goto the page `Data and tool connections` and select `ServiceNow` 
+Need to enable the Dataflow before starting the training.
+
+1. Make sure the ServiceNow DataFlow is enabled.
+
+2. Enter the below field values
+
+- Custom : On
+- Start Date: Yesterday date
+- End Date: Tomorrow date
+- Mode: Historical ....
 
 ![ServiceNow](./images/image-00002.png)
 
-
-2. Click on `Edit` menu from the selected `ServiceNow` integrations.
-
-![ServiceNow](./images/image-00003.png)
-
-
-3. Enter the following values
-
-- Data flow is on
-- Historical data for Initial AI-Training
-- Start Date should be past date 
-- End Date could be current date 
-
-![ServiceNow](./images/image-00004.png)
-
-4. Click on `Save` button.
-
-## 3.Start Training
+## 3. Start Training
 
 1. Goto the page `AI Model Management`
 
-2. Click on `Manage` tab.
+![ilender](./images/image-00003-1.png)
 
-3. Click on `Similar Incidents` link.
+2. Click on `Manage` tab
 
-![ServiceNow](./images/image-00005.png)
+![ilender](./images/image-00003.png)
+
+3. Click on `similar-incidents-configuration` link
+
+![ilender](./images/image-00004.png)
 
 4. Click on `Start Training` link.
 
-![ServiceNow](./images/image-00006.png)
+![ServiceNow](./images/image-00005.png)
 
 5. Training starts
 
 The training may take 2 to 5 minutes based on the data size.
 
+Training is Queued
+
+![ServiceNow](./images/image-00006.png)
+
+Data is analysed and data quality is good.
+
 ![ServiceNow](./images/image-00007.png)
 
-Training versions
+Training is completed.
 
-![ServiceNow](./images/image-00008.png)
+![ilender](./images/image-00008.png)
 
-Apps covered
 
-![ServiceNow](./images/image-00009.png)
+6. Click on `Versions` tab
 
-![ServiceNow](./images/image-00010.png)
+You can see the version trained and deployed.
+
+![ilender](./images/image-00009.png)
+
+7. Click on `Coverage` tab
+
+You can see the iLender application is covered.
+
+![ilender](./images/image-00010.png)

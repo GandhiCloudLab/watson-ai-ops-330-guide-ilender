@@ -5,16 +5,16 @@ This article explains about how to setup ServiceNow Integration in Watson AIOps.
 The article is based on the the following.
 
 - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.2.0
+- Watson AI-Ops 3.3.0
 
 
 1. Goto the page `Data and tool integrations`
 
-2. Click on  `Add Integration`
+2. Click on  `Add Connection`
 
 ![ServiceNow](./images/image-00001.png)
 
-3. In the `ServiceNow` card click on the `Add Integration` link
+3. In the `ServiceNow` card click on the `Add Connection` link
 
 ![ServiceNow](./images/image-00002.png)
 
@@ -29,6 +29,8 @@ The article is based on the the following.
 - ServiceNow URL
 - User
 - Password
+- Orchestration : Local
+
 
 6. Click on `Next` 
 
@@ -44,23 +46,18 @@ The article is based on the the following.
 ![ServiceNow](./images/image-00007.png)
 
 
-9. Click on `Next`
-
-![ServiceNow](./images/image-00007.png)
-
-
-10. Enter the below field values
+9. Enter the below field values
 
 - Dataflow : Off 
-- Mode: Historical ..
+- Mode: Historical ..  (or any value)
 - Start Date : Last year date
 - End Date  : tommorrow date
 
-11. Click on `Done`
+10. Click on `Done`
 
 ![ServiceNow](./images/image-00008.png)
 
-12. ServiceNow connection created
+11. ServiceNow connection created
 
 ![ServiceNow](./images/image-00009.png)
 

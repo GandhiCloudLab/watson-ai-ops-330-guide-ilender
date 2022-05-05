@@ -14,35 +14,7 @@ Here is the architecture that we are going to setup.
 <img src="images/architecture.png">
 
 
-### 1. Pre-requisites on User Laptop  / client linux VM
-
-<table>
-    <tr>
-        <td width="4%">S.No</td>
-        <td width="28%">Title</td>
-        <td width="40%">Description</td>
-        <td width="20%">Reference</td>
-    </tr>
-    <tr>
-        <td>1.1</td>
-        <td>Install Apache Benche </td>
-        <td>To create load on the app</td>
-        <td>
-
-[Details ...](https://httpd.apache.org/download.cgi)
-        </td>
-    </tr>
-    <tr>
-        <td>1.2</td>
-        <td>Other installs </td>
-        <td> Openshift CLI, Kubectl CLi, Curl, jq </td>
-        <td>
-        </td>
-    </tr>        
-</table>
-
-
-### 2. Watson AIOps 3.3 Installation
+### 1. Watson AIOps 3.3 Installation
 
 <table>
     <tr>
@@ -51,7 +23,7 @@ Here is the architecture that we are going to setup.
         <td width="12%">Reference</td>
     </tr>
     <tr>
-        <td>2.1</td>
+        <td>1.1</td>
         <td>Watson AIOps 3.3.0 Installation and demo setup requirements</td>
         <td>
 
@@ -59,7 +31,7 @@ Here is the architecture that we are going to setup.
         </td>
     </tr>
     <tr>
-        <td>2.2</td>
+        <td>1.2</td>
         <td>Installing Watson AIOps AI-Manager on ROKS</td>
         <td>
 [Details ...](./03-install-ai-manager)

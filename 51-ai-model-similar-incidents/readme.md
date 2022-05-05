@@ -10,6 +10,8 @@ The article is based on the the following
 
 1. Goto the page `AI Model Management`
 
+<img src="images/image-00001.png">
+
 2. Click on `Configure` link in `Similar Incidents` card
 
 ![ServiceNow](./images/image-00002.png)
@@ -33,14 +35,12 @@ The article is based on the the following
 
 7. Click on `Done` 
 
-![ServiceNow](./images/image-00006.png)
-
 8. Similar incidents training definition is created
 
-![ServiceNow](./images/image-00007.png)
+![ServiceNow](./images/image-00006.png)
 
 9. Click on `Manage` tab.
 
 The Similar incidents  training definition is displayed.
 
-![ServiceNow](./images/image-00008.png)
+![ServiceNow](./images/image-00007.png)

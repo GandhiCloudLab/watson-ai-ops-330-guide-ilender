@@ -1,4 +1,4 @@
-# Watson AIOps 3.2.0 installation and demo setup requirements.
+# Watson AIOps 3.3.0 installation and demo setup requirements.
 
 This documentation explains about the Hardware and account requirements for Watson AIOps 3.3.0 installation and demo setup.
 

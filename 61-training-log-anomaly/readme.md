@@ -24,7 +24,7 @@ We use iLender application here.
 
 Refer : [20-application-installation](../20-application-installation) to know how the app is deployed.
 
-![ilender](./images/image-00001.png)
+![ilender](./images/image-00002.png)
 
 ## 3. Generate Load
 
@@ -34,42 +34,50 @@ You need to have 10K lines of logs for each service in the application.
 
 This script will run for 20 minutes and stop.
 
-## 4. Disable Humio Data Flow for Training
+## 4. Enable Humio Data Flow
 
-While the load is ongoing in the application, do the following steps to enable the live log mode and to copy the logs into AIMgr for training. 
+Need to enable the Dataflow before starting the training.
 
-1. Goto the page `Data and tool connections` and select `Humio` 
+1. Make sure the humio DataFlow is enabled.
 
-![ilender](./images/image-00002.png)
+2. Enter the below field values
 
-2. Click on the humio connection `humio-connect-ilender`
+- Custom : On
+- Start Date: Yesterday date
+- End Date: Tomorrow date
 
-![ilender](./images/image-00003.png)
-
-3. Select the `Data flow` : `On`
-
-4. Select the `Mode` : `Live Data for Initial AI Training`
-
-5. Click on the `Save`
-
-![ilender](./images/image-00004.png)
+![ilender](./images/i-10.png)
 
 
-Now the live data would get copied to AIMgr.
-
-## 6. Do Training
+## 5. Do Training
 
 1. Goto the page `AI Model Management`
 
+![ilender](./images/image-00003.png)
+
 2. Click on `Manage` tab
 
-![ilender](./images/image-00006.png)
+![ilender](./images/image-00004.png)
 
 3. Click on `log-anomaly-detection` link
 
+![ilender](./images/image-00005.png)
+
+4. Click on `Edit Data` icon in the `Log Data` section.
+
+![ilender](./images/image-00006.png)
+
+5. Enter the below field values
+
+- Custom : On
+- Start Date: Yesterday date
+- End Date: Tomorrow date
+
+6. Click on `Save`
+
 ![ilender](./images/image-00007.png)
 
-4. Click on `Start Training` link
+7. Click on `Start Training` link
 
 ![ilender](./images/image-00008.png)
 
@@ -77,19 +85,37 @@ The training would start and go for `20 minutes` to `1 hour` based on the data s
 
 You will have `Training Complete` status once the training is done.
 
-5. Click on `Versions` tab
-
-You can see the version trained and deployed.
+Training is Queued
 
 ![ilender](./images/image-00009.png)
 
+Training is Queued, but the data is analysed and data quality is good.
+
 ![ilender](./images/image-00010.png)
 
-![ilender](./images/image-00011.png)
+Data Retrieval is completed.
+
 ![ilender](./images/image-00012.png)
+
+Training is completed.
 ![ilender](./images/image-00013.png)
-![ilender](./images/image-00014.png)
+
+8. Click on `Versions` tab
+
+You can see the version trained and deployed.
+
 ![ilender](./images/image-00015.png)
+
+9. Click on `Coverage` tab
+
+You can see the iLender application is covered.
+
 ![ilender](./images/image-00016.png)
+
+10. Click on `View Resources` button
+
 ![ilender](./images/image-00017.png)
+
+You can see the no. of log lines.
+
 ![ilender](./images/image-00018.png)

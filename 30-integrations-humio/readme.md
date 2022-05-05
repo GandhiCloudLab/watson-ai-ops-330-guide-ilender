@@ -9,11 +9,11 @@ The article is based on the the following.
 
 1. Goto the page `Data and tool integrations`
 
-2. Click on  `Add Integration`
+2. Click on  `Add Connection`
 
 ![Humio](./images/image-00001.png)
 
-3. In the `Humio` card click on the `Add Integration` link
+3. In the `Humio` card click on the `Add Connection` link
 
 ![Humio](./images/image-00002.png)
 
