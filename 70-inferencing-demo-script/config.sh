@@ -3,8 +3,8 @@
 ##### ---------------------------------------------------------------
 ###### Application URL
 ##### ---------------------------------------------------------------
-API_URL=http://1.1.1.1:30600
-API_URL_CREDIT_SCORE=http://1.1.1.1:30601
+API_URL=http://ilender-frontweb-ilender-ns.aaaaa.cloud
+API_URL_CREDIT_SCORE=http://ilender-creditscore-ilender-ns.aaaaa.cloud/creditscore
 
 ##### ---------------------------------------------------------------
 ###### Memory Leak Param
