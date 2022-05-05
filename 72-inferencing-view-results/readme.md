@@ -125,16 +125,24 @@ You can see the story and topology.
 
 1. Click on `Runbook` icon in the alert.
 
-![Story Viewer](./images/webconsole/i-13.png)
+![Story Viewer](./images/webconsole/i-31.png)
 
+2. Select the `Preview` menu.
 ![Story Viewer](./images/webconsole/i-51.png)
 
-
+3. Click on `Run runbook`.
 ![Story Viewer](./images/webconsole/i-52.png)
+
+4. Click on `Run runbook`.
 ![Story Viewer](./images/webconsole/i-53.png)
-![Story Viewer](./images/webconsole/i-54.png)
+
+5. Click on `Run` in `Step1`.
 ![Story Viewer](./images/webconsole/i-55.png)
+
+6. Click on `Complete` in `Step1`.
 ![Story Viewer](./images/webconsole/i-56.png)
+
+7. Click on `Run` in `Step1`.
 ![Story Viewer](./images/webconsole/i-57.png)
 
 ## 5. Resolving Incident
