@@ -134,11 +134,12 @@ echo "Process completed"
 
 4. Click on `Add automated step`.
 
+<img src="images/create-runbook-00002.png">
+
 5. Select the listed `Action`, which we created already.
 
 6. Click on `Select this action`.
 
-<img src="images/create-runbook-00002.png">
 <img src="images/create-runbook-00003.png">
 
 7. It shows parameter mappings. you can choose `Use Default Value`
