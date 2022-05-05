@@ -182,6 +182,22 @@ Here is the architecture that we are going to setup.
 [Details](./51-ai-model-similar-incidents)  
         </td>
     </tr>    
+    <tr>
+        <td>7.3</td>
+        <td>Enable Story Creation Policy </td>
+        <td>
+
+[Details](./53-story-creation-policy)  
+        </td>
+    </tr>    
+    <tr>
+        <td>7.4</td>
+        <td>Runbook Automation </td>
+        <td>
+
+[Details](./54-runbook)  
+        </td>
+    </tr>        
 </table>
 
 ### 7. Training
