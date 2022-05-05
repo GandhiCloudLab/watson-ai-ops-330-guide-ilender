@@ -5,7 +5,7 @@ This article explains about how to Create Training Definition for Similar Incide
 The article is based on the the following
 
 - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.3.0
+- Watson AI-Ops 3.2.0
 
 
 1. Goto the page `AI Model Management`

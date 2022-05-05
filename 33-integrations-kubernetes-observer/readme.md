@@ -45,7 +45,7 @@ Do the following.
 
 7. Click on `Done`
 
-<img src="images/image-0006.png">
+<img src="images/image-00006.png">
 
 8. Kubernetes connection is created successfully. This might have observer the resources found in the given namespace of the kubernetes cluster and create a Resource group
 

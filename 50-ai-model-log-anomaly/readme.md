@@ -1,11 +1,11 @@
 # Create AI-Model Definition for Log Anomaly
 
-This article explains about how to Create Training Definition for Similar Incidents in Watson AIOps.
+This article explains about how to Create Training Definition for Log Anomaly Detection in Watson AIOps.
 
 The article is based on the the following
 
 - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.2.0
+- Watson AI-Ops 3.3.0
 
 
 ## Steps
@@ -69,3 +69,5 @@ The Log Anomaly model training definition is displayed.
 
 <img src="images/image-00010.png">
 
+
+<img src="images/image-00011.png">
