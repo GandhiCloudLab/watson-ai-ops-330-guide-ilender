@@ -259,5 +259,14 @@ Here is the architecture that we are going to setup.
 [Details](./72-inferencing-view-results)
         </td>
     </tr>
+    <tr>
+        <td>9.4</td>
+        <td>Resolving Incident  </td>
+        <td>Resolving Incident</td>
+        <td>
+
+[Details](./73-resolving-incidents)
+        </td>
+    </tr>    
 </table>
 

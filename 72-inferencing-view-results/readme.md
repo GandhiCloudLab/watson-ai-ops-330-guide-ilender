@@ -35,7 +35,7 @@ Slack story shows the incident details to SRE.
 ![Slack Story](./images/story/i-14.png)
 
 
-## 3. ServiceNow Incident
+## 2. ServiceNow Incident
 
 An incident get created in ServiceNow as well.
 
@@ -48,7 +48,7 @@ An incident get created in ServiceNow as well.
 ![Slack Story](./images/snow/i-01.png)
 
 
-## 4. Recommented Actions
+## 3. Recommented Actions
 
 The best recommented actions are displayed from the ServiceNow.
 
@@ -61,103 +61,50 @@ The best recommented actions are displayed from the ServiceNow.
 ![Slack Story](./images/snow/i-03.png)
 
 
-## 3. Application Management - TO BE CORRECTED
-
-In application management also the story is shown.
-
-1. Click on `Story title link` to see the incident details in web console.
-
-![Slack Story](./images/story/i-31.png)
-
-1. Application tiles showing the alerts
-
-
-2. Click on `View Details` to see the details.
-
-You can see the story and topology.
-
-![App](./images/03-app2.png)
-
-3. Click on `Hand icon` to see the alerts.
-
-![App](./images/03-app3.png)
-
-4. Click on `View Story` to see the story viewer.
-
-
-
 ## 4. Story Viewer
+
+
+## 4.1. Stories and alerts
+
+This section shows all the stories and alerts available in the system.
+
+![Slack Story](./images/webconsole/stories-alerts.png)
+
+
+![Story Viewer](./images/webconsole/i-41.png)
+
+## 4.2. Story Details
+
+The story can be opened through the Slack as well.
 
 1. Click on `Story title link` to see the story/incident details in web console.
 
 ![Slack Story](./images/story/i-31.png)
 
-2. Story Viewer shows story and its events in web.
+## 4.2.1. Story 
+
+1. Story Viewer shows story and its events in web.
 
 ![Slack Story](./images/webconsole/i-01.png)
 
-3. Click on `Alerts` to see all the alerts belong to this story.
+## 4.2.2. Alerts
+
+1. Click on `Alerts` to see all the alerts belong to this story.
 
 ![Story Viewer](./images/webconsole/i-11.png)
 
-4. Click on  `Topology` tab to see Topology.
+2. Choose any of the alerts and it shows alert details.
 
-![Story Viewer](./images/webconsole/i-21.png)
-
-5. The Story tab shows a created story. TODODODOODO
-
-![Story Viewer](./images/webconsole/i-41.png)
-
-
-### 4.1 Alerts
-
-1. Choose any of the alerts and it shows alert details.
-
-2. Click on `Topology` to see Topology correlation.
+3. Click on `Topology` to see Topology correlation.
 
 ![Story Viewer](./images/webconsole/i-13.png)
 
-3.  Topology correlation is displayed
+4.  Topology correlation is displayed
 
 ![Story Viewer](./images/webconsole/i-14.png)
 
-### 5. Execute RunBook 
+## 4.2.3. Topology 
 
-1. Click on `Runbook` icon in the alert.
+1. Click on  `Topology` tab to see Topology.
 
-![Story Viewer](./images/webconsole/i-31.png)
-
-2. Select the `Preview` menu.
-![Story Viewer](./images/webconsole/i-51.png)
-
-3. Click on `Run runbook`.
-![Story Viewer](./images/webconsole/i-52.png)
-
-4. Click on `Run runbook`.
-![Story Viewer](./images/webconsole/i-53.png)
-
-5. Click on `Run` in `Step1`.
-![Story Viewer](./images/webconsole/i-55.png)
-
-6. Click on `Complete` in `Step1`.
-![Story Viewer](./images/webconsole/i-56.png)
-
-7. Click on `Run` in `Step1`.
-![Story Viewer](./images/webconsole/i-57.png)
-
-## 5. Resolving Incident
-
-1. Click on  `Mark As Resolved` button in Slack Story
-![Slack Story](./images/resolve/i-01.png)
-
-2. Click on  `Submit` button to resolve the Slack Story
-![Slack Story](./images/resolve/i-02.png)
-
-3. Story is closed automatically once it is resolved
-![Slack Story](./images/resolve/i-03.png)
-
-4. In `Stories and Alerts` page also the story is shown as `Resolved`
-![Slack Story](./images/resolve/i-04.png)
-
-5. In `ServiceNow` also the story is `Resolved`
-![Slack Story](./images/resolve/i-05.png)
+![Story Viewer](./images/webconsole/i-21.png)
