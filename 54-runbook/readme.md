@@ -1,13 +1,13 @@
 # Runbook Creation
 
-This article explain about how to create run book in Event Manager.
+This article explain about how to create run book in Watson AIOps.
 
 The runbook creating involves the following steps.
 
 - Connect Backend System with SSH
-- Create New Automation
-- Create RunBook
-- Create Trigger
+- Create New Action
+- Create Runbook
+- Assign Runbook
 
 
 The article is based on the the following
@@ -19,7 +19,7 @@ The article is based on the the following
 
 We are going to create a Runbook which has some automation scripts.
 
-Being, it is first time, we need to configure Integrations to connect to the target system, from where the script is going to get executed.
+Being, it is first time, we need to configure Integrations to connect to the target system (it is a system in which the script is going to get executed).
 
 1. Goto the page `Data and tool integrations`
 
@@ -72,9 +72,6 @@ vi ~/.ssh/authorized_keys
 
 3. Enter values for the High lighted fields.
 
-<img src="images/create-action-00002.png">
-<img src="images/create-action-00003.png">
-
 4. Give your script in the `Script` text box.
 
 
@@ -99,6 +96,10 @@ curl http://ilender-creditscore-ilender-ns.aaaaa.cloud/creditscore/clearLeakMemo
 echo ""
 echo "Process completed"
 ```
+
+<img src="images/create-action-00002.png">
+<img src="images/create-action-00003.png">
+
 
 6. Click on `Edit` button in the `target` row.
 
@@ -127,7 +128,7 @@ echo "Process completed"
 
 2. Click on  `Create Runbook `
 
-<img src="images/create-action-00001.png">
+<img src="images/create-runbook-00001.png">
 
 3. Enter `Name` and `Description`.
 
@@ -137,22 +138,22 @@ echo "Process completed"
 
 6. Click on `Select this action`.
 
-<img src="images/create-action-00002.png">
-<img src="images/create-action-00003.png">
+<img src="images/create-runbook-00002.png">
+<img src="images/create-runbook-00003.png">
 
 7. It shows parameter mappings. you can choose `Use Default Value`
 
 8. Click on `Save`.
 
-<img src="images/create-action-00004.png">
+<img src="images/create-runbook-00004.png">
 
 9. Click on `Publish`.
 
-<img src="images/create-action-00005.png">
+<img src="images/create-runbook-00005.png">
 
 10. Shows created Runbook.
 
-<img src="images/create-action-00006.png">
+<img src="images/create-runbook-00006.png">
 
 
 ## 4. Assign Runbook
@@ -181,7 +182,7 @@ Here `Attribute` and `Value` should match the story summary. Then only this runb
 <img src="images/assign-runbook-00004.png">
 <img src="images/assign-runbook-00005.png">
 
-7. Runbook is created.
+7. Runbook is assigned to a policy.
 
 <img src="images/assign-runbook-00006.png">
 
