@@ -49,7 +49,43 @@ Humio Password : humiopassword
 ================================================================
 ```
 
-## 2.1 Using Humio in WAIOps
+
+## 2. Create Humio Parser
+
+It is good to have the KV Parser modified. Here are the steps to do the same.
+
+1. Click on ` SandBox >> Parsers >> New Parser `
+<img src="images/humio-parser-00001.png">
+
+2.  Click on ` Clone Existing `
+<img src="images/humio-parser-00002.png">
+
+3.  Choose  `Kv`
+<img src="images/humio-parser-00003.png">
+
+4.  Enter name as `Kv-aiops`
+5.  Click on `Save`
+<img src="images/humio-parser-00004.png">
+
+6. Replace the text with the below
+
+```
+/(?<ts>\S+)\s(?<mystring>.*)(?<kube>,"kubernetes":*)/ |
+
+@rawstring := mystring
+```
+7.  Click on `Save`
+<img src="images/humio-parser-00005.png">
+
+8. Click on ` SandBox >> Settings >> API Tokens `
+
+9.  Choose  `Kv-aiops` parser in the list box.
+<img src="images/humio-parser-00006.png">
+
+
+## 3. Using Humio in WAIOps
+
+Note: This section is for info only.
 
 1. Access the Humio console using the above printed Humio URL, user and password.
 
@@ -85,7 +121,7 @@ Enter above retrieved `API Token`
 <img src="images/image3.png">
 
 
-### 2.2. To Ingest logs in Humio
+### 3.2. To Ingest logs in Humio
 
 To Ingest logs in humio, you need `Humio URL` and `API Token` from the respository. 
 
@@ -113,7 +149,7 @@ Copy the API Token from ` SandBox >> Settings >> API Token >> Copy `
 <img src="images/image4.png">
 
 
-## 3. ReInstall or Remove
+## 4. ReInstall or Remove
 
 To reinstall or remove this  humio install, you can delete the helm and namespace.
 
@@ -124,6 +160,6 @@ oc delete ns humio-ns
 ```
 `
 
-## 4. Note
+## 5. Note
 
 This document is based on RedHat OpenShift 4.8 on IBM Cloud (ROKS).
