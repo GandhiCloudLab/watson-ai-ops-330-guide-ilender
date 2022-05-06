@@ -49,7 +49,7 @@ Humio Password : humiopassword
 ================================================================
 ```
 
-## 2. Using Humio in WAIOps
+## 2.1 Using Humio in WAIOps
 
 1. Access the Humio console using the above printed Humio URL, user and password.
 
@@ -57,7 +57,7 @@ Humio Password : humiopassword
 
 <img src="images/image1.png">
 
-### Humio Connection in WAIOps
+### 2.1 Humio Connection in WAIOps
 
 #### Humio Service URL
 
@@ -77,8 +77,6 @@ http://1.1.1.1:8080/api/v1/repositories/sandbox/query
 
 http://humio-humio-ns.mycluster-aaaaaa.eu-de.containers.appdomain.cloud/api/v1/repositories/sandbox/query
 
-[Refer ...](../81-installing-humio-on-openshift)
-
 #### API Key
 
 Enter above retrieved `API Token`
@@ -87,7 +85,7 @@ Enter above retrieved `API Token`
 <img src="images/image3.png">
 
 
-### To Ingest logs in Humio
+### 2.2. To Ingest logs in Humio
 
 To Ingest logs in humio, you need `Humio URL` and `API Token` from the respository. 
 
