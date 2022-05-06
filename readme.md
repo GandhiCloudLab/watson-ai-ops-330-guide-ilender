@@ -1,18 +1,22 @@
 # Watson AIOps 3.3.0 Demo Setup with iLender Application
 
-This article explains about Watson AIOps 3.3.0 demo setup with iLender Application.
+This article explains about Watson AIOps 3.3.0 demo setup with iLender Application for log anomaly detection.
 
 The article is based on the the following
  - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
  - Watson AIOps 3.3.0
 
 
-### Architecture
+### Operational Architecture
 
-Here is the architecture that we are going to setup.    
+Here is the Operational architecture that we are going to setup.
+
+- OpenShift 4.8 Cluster is installed on IBM Cloud (ROKS)
+- Watson AIOps AIManager is installed on this cluster.
+- Humio logging system is installed on the same OCP Cluster
+- iLender Application is also deployed on the same OCP cluster.
 
 <img src="images/architecture.png">
-
 
 ### 1. Watson AIOps 3.3 Installation
 <table>

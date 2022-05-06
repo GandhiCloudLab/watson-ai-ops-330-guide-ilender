@@ -4,7 +4,7 @@ This documentation explains about the Hardware and account requirements for Wats
 
 ## 1. RedHat Openshift on IBM Cloud
 
-A RedHat Openshift on IBM Cloud (ROKS) with the below configuration needed to install Watson AIOps 3.2
+A RedHat Openshift on IBM Cloud (ROKS) with the below configuration needed to install Watson AIOps 3.3.0
 
  - OCP Version : 4.8.18
  - 5 Nodes with b3c.16x64 flavour. (CPU 16 core, Memory 64 GB)
