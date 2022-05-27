@@ -1,4 +1,4 @@
-# Run Demo (Inferencing)
+# Inferencing Change Risk
 
 This article explains about how to run the Inferencing for Change Risk in Watson AIOps.
 
