@@ -1,6 +1,6 @@
 # Setup Kubernetes Integration or Observer
 
-This document explains about how to setup Kubernetes Observer in Watson AIOps.
+This document explains about how to setup Kubernetes Observer in Watson AIOps. The Kube Observer will observe the resources in the Target Cluster and find form a Topology out of it.
 
 As part of the kubernetes observer, it is required to communicate with the target cluster. 
 Here the target cluster is the local cluster where the AI Manager and iLender app are installed.

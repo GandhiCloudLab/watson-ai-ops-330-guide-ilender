@@ -210,7 +210,15 @@ Here is the Operational architecture that we are going to setup.
 
 [Details](./54-runbook)  
         </td>
-    </tr>        
+    </tr>      
+    <tr>
+        <td>7.5</td>
+        <td>Create Training Definition for Change Risk </td>
+        <td>
+
+[Details](./55-ai-model-change-risk)  
+        </td>
+    </tr>          
 </table>
 
 ### 7. Training
@@ -242,6 +250,12 @@ Here is the Operational architecture that we are going to setup.
         <td>Enable Data flow on Servicenow integration, selction the mode, start the Similar Incidents training</td>
         <td>[Details](./62-training-similar-incidents)</td>
     </tr>    
+    <tr>
+        <td>8.5</td>
+        <td>Change Risk training </td>
+        <td>Enable Data flow on Servicenow integration, selction the mode, start the Change Risk training</td>
+        <td>[Details](./63-training-change-risk)</td>
+    </tr>        
 </table>
 
 
