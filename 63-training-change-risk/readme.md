@@ -10,21 +10,25 @@ The article is based on the the following
 
 ## 1. Pre Requisite
 
-### Sample Incidents for Training
+### Sample Change Request for Training
 
-Atleast 5 incidents should have been created in service-now, resolved with proper resolve comments and closed.
+Atleast 5 change request (CR) should have been created in service-now, out of which `3` records are having `close_code` as `Successful` and other `2` are having `Unsuccessful` as like below.
 
-Here are the sample incidents from service now.
+![ChangeRisk](./images/snow1.png)
 
-![ChangeRisk](./images/image-00001.png)
+#### Sample Successful record
+![ChangeRisk](./images/snow2.png)
 
-You can refer to this link to create these incidents in sevicenow. https://github.com/ibm-gsi-ecosystem/watson-ai-ops-snow/tree/main/01-snow-incidents
+#### Sample Unsuccessful record
+![ChangeRisk](./images/snow3.png)
+
+Go to configured SNOW and feed the records in change_requests excel sheet into `Change` table. 
 
 ## 2. Enable Data flow for Training
 
 Need to enable the Dataflow before starting the training.
 
-1. Make sure the ChangeRisk DataFlow is enabled.
+1. Make sure the ServiceNow DataFlow is enabled.
 
 2. Enter the below field values
 

@@ -1,4 +1,4 @@
-# Create Training Definition for Similar Incidents
+# Create Training Definition for Change Risk 
 
 This article explains about how to Create Training Definition for Change Risk in Watson AIOps.
 
