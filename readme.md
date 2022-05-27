@@ -303,5 +303,14 @@ Here is the Operational architecture that we are going to setup.
 [Details](./73-resolving-incidents)
         </td>
     </tr>    
+    <tr>
+        <td>9.5</td>
+        <td>Inferencing Change Risk</td>
+        <td>Inferencing Change Risk</td>
+        <td>
+
+[Details](./75-inferencing-change-risk)
+        </td>
+    </tr>   
 </table>
 

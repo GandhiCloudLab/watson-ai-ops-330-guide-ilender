@@ -22,7 +22,7 @@ Atleast 5 change request (CR) should have been created in service-now, out of wh
 #### Sample Unsuccessful record
 ![ChangeRisk](./images/snow3.png)
 
-Go to configured SNOW and feed the records in change_requests excel sheet into `Change` table. 
+Go to ServiceNow and feed 5 records in change_requests as mentioned above. 
 
 ## 2. Enable Data flow for Training
 
