@@ -55,17 +55,15 @@ Humio Password : humiopassword
 It is good to have the KV Parser modified. Here are the steps to do the same.
 
 1. Click on ` SandBox >> Parsers >> New Parser `
-<img src="images/humio-parser-00001.png">
+<img src="images/parser1.png">
 
 2.  Click on ` Clone Existing `
-<img src="images/humio-parser-00002.png">
+<img src="images/parser2.png">
 
 3.  Choose  `Kv`
-<img src="images/humio-parser-00003.png">
 
-4.  Enter name as `Kv-aiops`
+4.  Enter name as `Kv-waiops`
 5.  Click on `Save`
-<img src="images/humio-parser-00004.png">
 
 6. Replace the text with the below
 
@@ -75,12 +73,14 @@ It is good to have the KV Parser modified. Here are the steps to do the same.
 @rawstring := mystring
 ```
 7.  Click on `Save`
-<img src="images/humio-parser-00005.png">
+
+<img src="images/parser3.png">
 
 8. Click on ` SandBox >> Settings >> API Tokens `
 
-9.  Choose  `Kv-aiops` parser in the list box.
-<img src="images/humio-parser-00006.png">
+9.  Choose  `Kv-waiops` parser in the list box.
+
+<img src="images/parser4.png">
 
 
 ## 3. Using Humio in WAIOps
