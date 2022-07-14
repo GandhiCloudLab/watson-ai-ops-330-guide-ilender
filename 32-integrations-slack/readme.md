@@ -293,6 +293,8 @@ oc get po | grep ibm-nginx
 
 ```
 
+It should show the nginx pods with `1/1 Running`
+
 <img src="images/image-00060.png">
 
 
