@@ -192,30 +192,7 @@ Do the same for both the channels.
 <img src="images/image-aimgr-00008.png">
 
 
-## 5. Update Nginx Certificate
-
-1. Login into AIOps installed cluster using `oc login ...` command .
-
-2. Goto the AIOps installed namespace
-
-```
-oc project cp4waiops
-```
-
-3. There is a script file [update-nginx.sh](./files/update-nginx.sh)
-
-Run the script.
-
-```
-sh files/update-nginx.sh
-```
-
-This will update the nginx certificate.
-
-Note: The similar script is also available in  https://pages.github.ibm.com/up-and-running/watson-aiops/AI_Manager/Installation/#ngnix-certificate-for-v31
-
-
-## 6. Integrate WAIOps in Slack
+## 5. Integrate WAIOps in Slack
 
 Click on `Event Subscription` from the left menu
 
@@ -249,7 +226,9 @@ Click on `Save Changes`
 
 
 
-## 7. Create Slash Command
+## 6. Create Slash Command
+
+### 6.1 Enter Slash commands in Slack Config
 
 Click on `Slash Commands` in the left menu
 
@@ -275,6 +254,10 @@ Click on  `Allow` button
 
 <img src="images/image-00053.png">
 
+
+### 6.2 Add apps to Proactive and Reactive channels.
+
+
 Click on  `Add Apps` for proactive channel
 
 <img src="images/image-00054.png">
@@ -288,19 +271,32 @@ Click on  `Add Apps` for reactive channel and add the app.
 
 <img src="images/image-00057.png">
 
+### 6.3 Patch the slack integrator for /welcome
 
-Run the below command to patch the slack integrator with `/welcome`
+Run the below commands to patch the slack integrator with `/welcome` and  restart the nginx pods
 
 ```
+oc project cp4waiops
+
 oc set env deployment/$(oc get deploy -l app.kubernetes.io/component=chatops-slack-integrator -o jsonpath='{.items[*].metadata.name }') SLACK_WELCOME_COMMAND_NAME=/welcome
+
+oc delete pod $(oc get po |grep ibm-nginx | awk '{print$1}')
+
 ```
 
-<img src="images/image-00058.png">
+### 6.4 Verify the nginx pods
 
-The above patch would restart the below nginx pod. Otherwise, you can do it manually.
+Run the below command to verify the nginx pods they are up and running.
+
+```
+oc get pod $(oc get po |grep ibm-nginx | awk '{print$1}')
+
+```
 
 <img src="images/image-00060.png">
 
+
+### 6.5 Verify /welcome in slack
 
 Enter `/welcome` command in proactive channel and you should see the welcome message like this.
 
