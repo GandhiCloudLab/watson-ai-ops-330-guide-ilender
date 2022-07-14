@@ -289,7 +289,7 @@ oc delete pod $(oc get po |grep ibm-nginx | awk '{print$1}')
 Run the below command to verify the nginx pods they are up and running.
 
 ```
-oc get pod $(oc get po |grep ibm-nginx | awk '{print$1}')
+oc get po | grep ibm-nginx
 
 ```
 
